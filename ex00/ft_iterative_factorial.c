@@ -17,16 +17,20 @@ int	ft_iterative_factorial(int nb)
 
 	i = 1;
 	fac = 1;
+	if (nb == 0)
+		return (1);
+	if (nb > 12 || nb < 0)
+		return (0);
 	while (i <= nb)
 	{
 		fac *= i;
 		i ++;
 	}
 	return (fac);
-	if (nb >)
 }
-#include <stdio.h>
+
+/*#include <stdio.h>
 int main()
 {
-	printf("%d",ft_iterative_factorial(4));
-}
+	printf("%d",ft_iterative_factorial(8));
+}*/

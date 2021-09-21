@@ -6,22 +6,22 @@
 /*   By: cbukuba <cbukuba@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 08:33:02 by cbukuba           #+#    #+#             */
-/*   Updated: 2021/09/22 00:52:50 by cbukuba          ###   ########.fr       */
+/*   Updated: 2021/09/22 01:24:42 by cbukuba          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
 	int	i;
+	int	p;
 
 	i = 0;
 	while (i <= nb)
 	{
-		if ((i * i) == nb)
+		p = i * i;
+		if (p == nb)
 			if (i <= 46340)
-			{
 				return (i);
-			}
 		i ++;
 	}
 	return (0);

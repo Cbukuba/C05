@@ -6,7 +6,7 @@
 /*   By: cbukuba <cbukuba@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 08:33:02 by cbukuba           #+#    #+#             */
-/*   Updated: 2021/09/22 00:52:18 by cbukuba          ###   ########.fr       */
+/*   Updated: 2021/09/22 00:52:50 by cbukuba          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ int	ft_sqrt(int nb)
 	return (0);
 }
 
-#include <stdio.h>
-int main()
-{
-	printf("%d", ft_sqrt(2147395600));
-}
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%d", ft_sqrt(2147395600));
+// }

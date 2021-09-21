@@ -6,7 +6,7 @@
 /*   By: cbukuba <cbukuba@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 08:33:02 by cbukuba           #+#    #+#             */
-/*   Updated: 2021/09/20 08:33:06 by cbukuba          ###   ########.fr       */
+/*   Updated: 2021/09/22 00:52:18 by cbukuba          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,17 @@ int	ft_sqrt(int nb)
 	while (i <= nb)
 	{
 		if ((i * i) == nb)
-			return (i);
+			if (i <= 46340)
+			{
+				return (i);
+			}
 		i ++;
 	}
 	return (0);
 }
 
-/*#include <stdio.h>
+#include <stdio.h>
 int main()
 {
-	printf("%d", ft_sqrt(16));
-}*/
+	printf("%d", ft_sqrt(2147395600));
+}

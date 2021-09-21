@@ -6,7 +6,7 @@
 /*   By: cbukuba <cbukuba@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 08:41:41 by cbukuba           #+#    #+#             */
-/*   Updated: 2021/09/20 08:41:43 by cbukuba          ###   ########.fr       */
+/*   Updated: 2021/09/22 01:28:17 by cbukuba          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	ft_is_prime(int nb)
 	return (1);
 }
 
-/*#include <stdio.h>
-int main()
-{
-	printf("%d", ft_is_prime(14));
-}*/
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("%d", ft_is_prime(11));
+// }

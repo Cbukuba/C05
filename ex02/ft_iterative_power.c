@@ -32,5 +32,5 @@ int	ft_iterative_power(int nb, int power)
 // #include <stdio.h>
 // int main()
 // {
-// 	printf("%d",ft_iterative_power(4, -2));
+// 	printf("%d",ft_iterative_power(4, 4));
 // }

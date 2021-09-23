@@ -13,14 +13,13 @@
 int	ft_is_prime(int nb)
 {
 	int	i;
-	int	cmp;
 
 	i = 2;
 	if (nb <= 1)
 		return (0);
 	if (nb == 2)
 		return (1);
-	while (nb / i > i)
+	while (nb / i >= i)
 	{
 		if (nb % i == 0)
 			return (0);
@@ -32,5 +31,5 @@ int	ft_is_prime(int nb)
 // #include <stdio.h>
 // int main()
 // {
-// 	printf("%d", ft_is_prime(11));
+// 	printf("%d", ft_is_prime(23));
 // }

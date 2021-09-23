@@ -15,14 +15,15 @@ int	ft_iterative_power(int nb, int power)
 	int	result;
 	int	i;
 
-	i = 0;
 	if (power < 0)
 		return (0);
 	if (power == 0)
 		return (1);
-	while (i <= nb)
+	i = 1;
+	result = nb;
+	while (i < power)
 	{
-		result = nb * nb;
+		result = result * nb;
 		i ++;
 	}
 	return (result);

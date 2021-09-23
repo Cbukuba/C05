@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbukuba <cbukuba@student.s19.beµ>         +#+  +:+       +#+        */
+/*   By: cbukuba <cbukuba@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/19 17:51:00 by cbukuba           #+#    #+#             */
-/*   Updated: 2021/09/19 17:51:03 by cbukuba          ###   ########.fr       */
+/*   Created: 2021/09/23 20:55:34 by cbukuba           #+#    #+#             */
+/*   Updated: 2021/09/23 20:55:37 by cbukuba          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_iterative_factorial(int nb)
 	fac = 1;
 	if (nb == 0)
 		return (1);
-	if (nb > 12 || nb < 0)
+	if (nb < 0)
 		return (0);
 	while (i <= nb)
 	{

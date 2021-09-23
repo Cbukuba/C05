@@ -1,36 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbukuba <cbukuba@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/20 08:33:02 by cbukuba           #+#    #+#             */
-/*   Updated: 2021/09/22 01:24:42 by cbukuba          ###   ########.fr       */
+/*   Created: 2021/09/23 17:01:54 by cbukuba           #+#    #+#             */
+/*   Updated: 2021/09/23 17:01:58 by cbukuba          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
+int	ft_is_prime(int nb)
 {
 	int	i;
-	int	p;
 
-	i = 0;
-	if (i <= 46340)
+	i = 2;
+	if (nb <= 1)
+		return (0);
+	if (nb == 2)
+		return (1);
+	while (nb / i >= i)
 	{
-		while (i <= nb)
-		{
-			p = i * i;
-			if (p == nb)
-				return (i);
-			i ++;
-		}
+		if (nb % i == 0)
+			return (0);
+		i ++;
 	}
-	return (0);
+	return (1);
 }
 
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("%d", ft_sqrt(2147395600));
-// }
+int	ft_find_next_prime(int nb)
+{	
+	nb++;
+	if (ft_is_prime(nb) == 0)
+	{
+		while (!(ft_is_prime(nb)))
+			nb++;
+	}
+	return (nb);
+}
